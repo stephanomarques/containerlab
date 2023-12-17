@@ -1,0 +1,13 @@
+name: demo
+
+topology:
+  nodes:
+    srlinux1:
+      kind: srl
+      image: ghcr.io/nokia/srlinux
+    srlinux2:
+      kind: srl
+      image: ghcr.io/nokia/srlinux
+
+  links:
+    - endpoints: ["srlinux1:e1-1", "srlinux2:e1-1"]
